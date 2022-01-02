@@ -14,15 +14,15 @@ function getCompuetrChoice(){
     return choices[randomNum];
 }
 function convertWord(letter){
-    if (letter === "r") return "سنگ"
-    if(letter === "p")return "کاغذ"
-    return "قیچی"
+    if (letter === "r") return "Stone"
+    if(letter === "p")return "Paper"
+    return "scissorsn"
 }
 function win(user,comp){
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = "کامپیوتر " + convertWord(comp) + " و شما "+ convertWord(user) +" انتخاب کردید ، شما بردید " ;
+    result_p.innerHTML = "Computer" + convertWord(comp) + "And you"+ convertWord(user) +" You choose, you won " ;
     const userChoice_div = document.getElementById(user)
     userChoice_div.classList.add('green');
     setTimeout(function(){userChoice_div.classList.remove('green')},300);
@@ -31,13 +31,13 @@ function lose(user,comp){
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = "کامپیوتر " + convertWord(comp) + " و شما "+ convertWord(user) +" انتخاب کردید ، شما باختید " ;
+    result_p.innerHTML = "Copmuter" + convertWord(comp) + "And you"+ convertWord(user) +" You choose, you lost " ;
      const userChoice_div = document.getElementById(user)
     userChoice_div.classList.add('red');
     setTimeout(function(){userChoice_div.classList.remove('red')},300);
 }
 function draw(user,comp){
-    result_p.innerHTML = "مساوی شد !" ;
+    result_p.innerHTML = "Equalized !" ;
     const userChoice_div = document.getElementById(user)
     userChoice_div.classList.add('gray');
     setTimeout(function(){userChoice_div.classList.remove('gray')},300);
