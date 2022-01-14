@@ -22,8 +22,8 @@ function win(user,comp){
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = "Computer" + convertWord(comp) + "And you"+ convertWord(user) +" You choose,
-    you won " ;
+    result_p.innerHTML = "Computer" + convertWord(comp) + "And you"+ convertWord(user) +" You choose , 
+     you won " ;
     const userChoice_div = document.getElementById(user)
     userChoice_div.classList.add('green');
     setTimeout(function(){userChoice_div.classList.remove('green')},300);
@@ -32,7 +32,7 @@ function lose(user,comp){
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = "Copmuter" + convertWord(comp) + "And you"+ convertWord(user) +" You choose, 
+    result_p.innerHTML = "Copmuter" + convertWord(comp) + "And you"+ convertWord(user) +" You choose , 
     you lost " ;
      const userChoice_div = document.getElementById(user)
     userChoice_div.classList.add('red');
