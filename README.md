@@ -1,6 +1,12 @@
 # rock-paper-scissorsn
 js game
 
+
+
+![photo_2022-01-14_19-13-02](https://user-images.githubusercontent.com/25683280/149573096-ece6f6c0-9c9e-4b16-b9ff-69330e029bc2.jpg)
+
+
+
 Rock-and-paper-game
 Javascript game
 
